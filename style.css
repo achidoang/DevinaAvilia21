@@ -23,7 +23,7 @@ canvas {
 }
 .utama-container h1 {
   position: absolute;
-  top: 25%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -34,14 +34,13 @@ canvas {
   user-select: none;
 }
 
-.utama-container .dev {
-  top: 34%;
+.utama-container span {
   color: rgb(192, 242, 10);
 }
 
 .utama-container .klik {
   position: absolute;
-  top: 47%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
