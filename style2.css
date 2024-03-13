@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap")
-  /*  */ * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +22,7 @@ canvas {
 }
 .utama-container h1 {
   position: absolute;
-  top: 25%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -35,21 +34,8 @@ canvas {
 }
 
 .utama-container .dev {
-  top: 34%;
+  top: 55%;
   color: rgb(192, 242, 10);
-}
-
-.utama-container .klik {
-  position: absolute;
-  top: 47%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: "Montserrat";
-  font-size: 1em;
-  font-weight: 500;
-  -webkit-user-select: none;
-  user-select: none;
 }
 /* Utama End  */
 
@@ -69,7 +55,7 @@ canvas {
   content: "";
   position: absolute;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   bottom: 0;
   left: 0;
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
