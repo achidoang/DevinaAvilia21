@@ -157,12 +157,3 @@ document.ontouchstart = (evt) => birthday.onClick(evt);
   then = now;
   birthday.update(delta / 1000);
 })();
-
-// Ambil elemen iframe
-const youtubeVideo = document.getElementById("youtube-video");
-
-// Sembunyikan video dengan CSS
-// youtubeVideo.style.display = "none";
-
-// Mulai video secara otomatis tanpa menampilkannya
-// youtubeVideo.src += "?autoplay=1";
