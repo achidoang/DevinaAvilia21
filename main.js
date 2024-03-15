@@ -157,3 +157,23 @@ document.ontouchstart = (evt) => birthday.onClick(evt);
   then = now;
   birthday.update(delta / 1000);
 })();
+
+// Parallax
+let text = document.getElementById("text");
+let aurora1 = document.getElementById("aurora1");
+let aurora2 = document.getElementById("aurora2");
+let moon = document.getElementById("moon");
+let comet = document.getElementById("comet");
+let gunung = document.getElementById("gunung");
+
+window.addEventListener("scroll", function () {
+  let value = window.scrollY;
+
+  moon.style.top = 650 + value * -0.4 + "px";
+  aurora1.style.top = -40 + value * 0.3 + "px";
+  aurora1.style.left = 50 + value * 0.6 + "px";
+  aurora2.style.top = 50 + value * 0.5 + "px";
+  aurora2.style.left = 1200 + value * -0.6 + "px";
+  comet.style.top = 60 + value * 0.8 + "px";
+  comet.style.left = 1500 + value * -1.2 + "px";
+});
