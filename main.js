@@ -167,12 +167,18 @@ let road = document.getElementById("road");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
+  let speedFactor = 1; // Kecepatan default
+  let speedText = 1;
+  if (window.innerWidth <= 768) {
+    speedText = 0.27;
+    speedFactor = 1.2; // Atur kecepatan lebih lambat untuk layar ponsel
+  }
 
-  bg.style.top = 200 + value * 0.1 + "px";
-  moon.style.left = 1150 + value * -0.5 + "px";
-  mountain.style.top = 770 + value * -0.7 + "px";
-  road.style.top = 500 + value * -0.3 + "px";
-  text.style.top = -85 + value * 0.07 + "px";
+  bg.style.top = 200 + value * 0.1 * speedFactor + "px";
+  moon.style.left = 1150 + value * -0.5 * speedFactor + "px";
+  mountain.style.top = 770 + value * -0.7 * speedFactor + "px";
+  road.style.top = 500 + value * -0.3 * speedFactor + "px";
+  text.style.top = -180 + value * 0.1 * speedFactor * speedText + "px";
 });
 
 // show % hidden element

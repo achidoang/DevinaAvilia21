@@ -93,6 +93,7 @@ section {
   display: flex;
   justify-content: center;
   overflow-x: hidden;
+  overflow-y: hidden;
   align-items: center;
 }
 
