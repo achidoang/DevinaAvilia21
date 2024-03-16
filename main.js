@@ -28,7 +28,7 @@ class Birthday {
     let x = evt.clientX || (evt.touches && evt.touches[0].pageX);
     let y = evt.clientY || (evt.touches && evt.touches[0].pageY);
 
-    let count = random(4, 6);
+    let count = random(3, 5);
     for (let i = 0; i < count; i++)
       this.fireworks.push(
         new Firework(
@@ -184,15 +184,15 @@ window.addEventListener("scroll", function () {
     speedBg = 1.3;
   }
 
-  bg.style.top = 600 + value * -0.6 * speedFactor * speedBg + "px";
+  bg.style.top = 265 + value * -0.37 * speedFactor * speedBg + "px";
   moon.style.left = 1150 + value * -0.5 * speedFactor + "px";
   moon1.style.top = 300 + value * 0.07 + "px";
   moon1.style.left = -350 + value * 0.65 + "px";
 
-  mountain.style.top = 770 + value * -0.7 * speedFactor * speedMountain + "px";
+  mountain.style.top = 770 + value * -0.77 * speedFactor * speedMountain + "px";
   road.style.top = 500 + value * -0.4 * speedFactor + "px";
   text.style.top =
-    speedText2 + -160 + value * 0.04 * speedFactor * speedText + "px";
+    speedText2 + -160 + value * 0.06 * speedFactor * speedText + "px";
 });
 
 // show % hidden element
