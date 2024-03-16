@@ -136,9 +136,8 @@ section img {
 /* Footer */
 .bodyy {
   padding: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  /* margin: 5px 5px; */
 }
 .sec {
   display: grid;
