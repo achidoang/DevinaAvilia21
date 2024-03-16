@@ -173,10 +173,6 @@ window.addEventListener("scroll", function () {
   mountain.style.top = 770 + value * -0.7 + "px";
   road.style.top = 500 + value * -0.3 + "px";
   text.style.top = -85 + value * 0.07 + "px";
-
-  // aurora2.style.left = 1200 + value * -0.6 + "px";
-  // comet.style.top = 60 + value * 0.8 + "px";
-  // comet.style.left = 1500 + value * -1.2 + "px";
 });
 
 // show % hidden element
