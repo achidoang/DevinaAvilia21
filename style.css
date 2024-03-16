@@ -58,38 +58,6 @@ canvas {
   user-select: none;
 }
 
-/* Tablet dan perangkat seluler */
-@media only screen and (max-width: 768px) {
-  * {
-    /* overflow-x: hidden; */
-    width: 100%;
-  }
-  .utama-container {
-    overflow-x: hidden;
-
-    display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
-    padding: 20px; /* Beri ruang padding pada setiap elemen dalam footer */
-  }
-
-  .utama-container h1 {
-    font-size: 2.8em;
-    text-align: center; /* Mengurangi ukuran font untuk judul h1 */
-  }
-
-  .utama-container span {
-    color: #c0f20a;
-    font-size: 0.8em;
-    font-weight: 500;
-    font-family: "Montserrat", "Source Sans Pro";
-  }
-
-  .utama-container .klik {
-    top: 10%;
-    color: #fff;
-    font-size: 0.7em;
-    font-weight: 500;
-  }
-}
 /* Utama End  */
 /* ========== */
 
@@ -161,79 +129,9 @@ section img {
 .moonX {
   opacity: 1;
 }
-/* Tablet dan perangkat seluler */
-@media only screen and (max-width: 768px) {
-  section {
-    position: relative;
-    width: 100%;
-    min-height: 80vh;
-    justify-content: center;
-    overflow-x: hidden;
-    align-items: center;
-  }
 
-  #text {
-    font-size: 2.4em;
-    text-align: center;
-  }
-
-  .moonY {
-    opacity: 1;
-  }
-
-  .moonX {
-    opacity: 0;
-  }
-}
 /* Parallax End */
 /* ============= */
-
-/* About */
-.about {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background: url(images/underground.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.about:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  bottom: 0;
-  left: 0;
-  /* background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0)); */
-}
-
-.about {
-  display: flex;
-  justify-content: space-between;
-  padding: 2rem;
-  position: relative;
-}
-
-.about-title {
-  margin: auto auto;
-  font-size: 5rem;
-  position: relative;
-  font-weight: 700;
-  letter-spacing: 2px;
-}
-
-.today-date {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.today-date span {
-  font-size: 1.5rem;
-}
-/* About End */
 
 /* Footer */
 .bodyy {
@@ -274,12 +172,71 @@ section img {
   /* transform: translateX(0); */
   filter: blur(0);
 }
-
+/* Footer End */
+/* ================= */
+/* ================= */
 /* Tablet dan perangkat seluler */
 @media only screen and (max-width: 768px) {
+  /* UTAMA */
+  * {
+    /* overflow-x: hidden; */
+    width: 100%;
+  }
+  .utama-container {
+    overflow-x: hidden;
+
+    display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
+    padding: 20px; /* Beri ruang padding pada setiap elemen dalam footer */
+  }
+
+  .utama-container h1 {
+    font-size: 2.8em;
+    text-align: center; /* Mengurangi ukuran font untuk judul h1 */
+  }
+
+  .utama-container span {
+    color: #c0f20a;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: "Montserrat", "Source Sans Pro";
+  }
+
+  .utama-container .klik {
+    top: 10%;
+    color: #fff;
+    font-size: 0.7em;
+    font-weight: 500;
+  }
+  /* UTAMA END */
+
+  /* PARALLAX */
+  section {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    justify-content: center;
+    overflow-x: hidden;
+    align-items: center;
+  }
+
+  #text {
+    font-size: 2.4em;
+    text-align: center;
+  }
+
+  .moonY {
+    opacity: 1;
+  }
+
+  .moonX {
+    opacity: 0;
+  }
+  /* PARALLAX END */
+  /* FOOTER */
   .sec {
     display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
     padding: 0px; /* Beri ruang padding pada setiap elemen dalam footer */
+    min-height: 80vh;
   }
 
   .sec h2 {
@@ -291,4 +248,5 @@ section img {
     margin-inline: 0; /* Reset margin horizontal */
     text-align: left; /* Pusatkan teks */
   }
+  /* FOOTER END */
 }
