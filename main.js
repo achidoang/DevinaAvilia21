@@ -177,7 +177,7 @@ window.addEventListener("scroll", function () {
 
   // Atur kecepatan lebih lambat untuk layar ponsel
   if (window.innerWidth <= 768) {
-    speedText = 0.1;
+    speedText = 0.6;
     speedText2 = -40;
     speedMountain = 1;
     speedFactor = 1.2;
@@ -186,8 +186,8 @@ window.addEventListener("scroll", function () {
 
   bg.style.top = 600 + value * -0.6 * speedFactor * speedBg + "px";
   moon.style.left = 1150 + value * -0.5 * speedFactor + "px";
-  moon1.style.top = 250 + value * 0.3 + "px";
-  moon1.style.left = -100 + value * 0.6 + "px";
+  moon1.style.top = 300 + value * 0.07 + "px";
+  moon1.style.left = -350 + value * 0.65 + "px";
 
   mountain.style.top = 770 + value * -0.7 * speedFactor * speedMountain + "px";
   road.style.top = 500 + value * -0.4 * speedFactor + "px";

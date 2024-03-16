@@ -179,8 +179,6 @@ section img {
 @media only screen and (max-width: 768px) {
   /* UTAMA */
   * {
-    /* overflow-x: hidden; */
-    /* width: 100%; */
     max-width: max-content;
   }
   .utama-container {
@@ -190,13 +188,13 @@ section img {
   }
 
   .utama-container h1 {
-    font-size: 2.8em;
+    font-size: 1.75em;
     text-align: center; /* Mengurangi ukuran font untuk judul h1 */
   }
 
   .utama-container span {
     color: #c0f20a;
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: 500;
     font-family: "Montserrat", "Source Sans Pro";
   }
@@ -220,7 +218,7 @@ section img {
   }
 
   #text {
-    font-size: 2.4em;
+    font-size: 2.1em;
     text-align: center;
   }
 
