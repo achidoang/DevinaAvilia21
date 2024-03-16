@@ -146,6 +146,13 @@ section img {
   user-select: none;
 }
 
+.moonY {
+  opacity: 0;
+}
+
+.moonX {
+  opacity: 1;
+}
 /* Tablet dan perangkat seluler */
 @media only screen and (max-width: 768px) {
   section {
@@ -178,6 +185,14 @@ section img {
     color: #fff;
     font-size: 0.7em;
     font-weight: 500;
+  }
+
+  .moonY {
+    opacity: 1;
+  }
+
+  .moonX {
+    opacity: 0;
   }
 }
 /* Parallax End */

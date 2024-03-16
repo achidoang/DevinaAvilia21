@@ -163,22 +163,36 @@ let text = document.getElementById("text");
 let bg = document.getElementById("bg");
 let mountain = document.getElementById("mountain");
 let moon = document.getElementById("moon");
+let moon1 = document.getElementById("moon1");
 let road = document.getElementById("road");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
-  let speedFactor = 1; // Kecepatan default
+  // Kecepatan Default
+  let speedMountain = 1;
+  let speedFactor = 1;
   let speedText = 1;
+  let speedText2 = 0;
+  let speedBg = 1;
+
+  // Atur kecepatan lebih lambat untuk layar ponsel
   if (window.innerWidth <= 768) {
-    speedText = 0.27;
-    speedFactor = 1.2; // Atur kecepatan lebih lambat untuk layar ponsel
+    speedText = 0.1;
+    speedText2 = -40;
+    speedMountain = 1;
+    speedFactor = 1.2;
+    speedBg = -2.2;
   }
 
-  bg.style.top = 200 + value * 0.1 * speedFactor + "px";
+  bg.style.top = 200 + value * 0.1 * speedFactor * speedBg + "px";
   moon.style.left = 1150 + value * -0.5 * speedFactor + "px";
-  mountain.style.top = 770 + value * -0.7 * speedFactor + "px";
-  road.style.top = 500 + value * -0.3 * speedFactor + "px";
-  text.style.top = -180 + value * 0.1 * speedFactor * speedText + "px";
+  moon1.style.top = 250 + value * 0.3 + "px";
+  moon1.style.left = -100 + value * 0.6 + "px";
+
+  mountain.style.top = 770 + value * -0.7 * speedFactor * speedMountain + "px";
+  road.style.top = 500 + value * -0.4 * speedFactor + "px";
+  text.style.top =
+    speedText2 + -160 + value * 0.04 * speedFactor * speedText + "px";
 });
 
 // show % hidden element
