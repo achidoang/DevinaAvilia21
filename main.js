@@ -168,12 +168,28 @@ let road = document.getElementById("road");
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
 
+  bg.style.top = 200 + value * 0.1 + "px";
   moon.style.left = 1150 + value * -0.5 + "px";
   mountain.style.top = 770 + value * -0.7 + "px";
   road.style.top = 500 + value * -0.3 + "px";
-  text.style.top = -70 + value * 0.09 + "px";
+  text.style.top = -85 + value * 0.07 + "px";
 
   // aurora2.style.left = 1200 + value * -0.6 + "px";
   // comet.style.top = 60 + value * 0.8 + "px";
   // comet.style.left = 1500 + value * -1.2 + "px";
 });
+
+// show % hidden element
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
