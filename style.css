@@ -173,13 +173,15 @@ section img {
 }
 /* Footer End */
 /* ================= */
+
 /* ================= */
 /* Tablet dan perangkat seluler */
 @media only screen and (max-width: 768px) {
   /* UTAMA */
   * {
     /* overflow-x: hidden; */
-    width: 100%;
+    /* width: 100%; */
+    max-width: max-content;
   }
   .utama-container {
     overflow-x: hidden;
