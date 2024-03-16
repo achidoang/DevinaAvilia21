@@ -60,6 +60,9 @@ canvas {
 
 /* Tablet dan perangkat seluler */
 @media only screen and (max-width: 768px) {
+  * {
+    overflow-x: hidden;
+  }
   .utama-container {
     overflow-x: hidden;
 
