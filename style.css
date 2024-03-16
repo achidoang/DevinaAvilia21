@@ -183,7 +183,6 @@ section img {
   }
   .utama-container {
     overflow-x: hidden;
-
     display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
     padding: 20px; /* Beri ruang padding pada setiap elemen dalam footer */
   }
