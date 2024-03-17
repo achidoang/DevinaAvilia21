@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style3.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-card">
+      <div class="card">
+        <div class="hidden">
+          <h2>Happy 21st birthday!</h2>
+          <p>
+            Wishing you all the happiness, prosperity, and may all your dreams
+            come true.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-card">
+      <div class="card">
+        <div class="hidden">
+          <h2>May this birthday</h2>
+          <p>
+            be filled with joy, laughter, and everything that brings a smile to
+            your beautiful face!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-card">
+      <div class="card">
+        <div class="hidden">
+          <h2>It’s your special day</h2>
+          <p>I thank God for bringing you to this world.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-card">
+      <div class="card">
+        <div class="hidden">
+          <h2>I hope one day,</h2>
+          <p>
+            you’ll realize exactly how dear and special you are to me. Wishing
+            you the best birthday.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-card">
+      <div class="card">
+        <div class="hidden">
+          <h2>Be happy,</h2>
+          <p>you were born to bring blessings and inspiration to all.</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          console.log(entry);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          } else {
+            entry.target.classList.remove("show");
+          }
+        });
+      });
+
+      const hiddenElements = document.querySelectorAll(".hidden");
+      hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

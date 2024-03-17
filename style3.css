@@ -1,0 +1,149 @@
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: calc(var(--card-width) / 1.8);
+  --card-width: 90vh;
+}
+
+body {
+  background: #212534;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.container-card {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  font-family: cursive;
+  flex-direction: column;
+  color: rgb(88 199 250 / 100%);
+}
+
+.card:hover {
+  transition: color 1s;
+}
+.card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.card::before {
+  content: "";
+  width: 104%;
+  height: 108%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  top: -4%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.card h2 {
+  font-size: 3em;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.card p {
+  font-size: 1.5em;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* Tablet dan perangkat seluler */
+@media only screen and (max-width: 768px) {
+  :root {
+    --card-height: 40vh;
+    --card-width: calc(var(--card-height) / 1.2);
+  }
+
+  .card::before {
+    width: 104%;
+    height: 104%;
+    top: -2%;
+    left: -2%;
+  }
+
+  .card h2 {
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .card p {
+    font-size: 0.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
