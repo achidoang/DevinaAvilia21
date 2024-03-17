@@ -16,8 +16,8 @@
 }
 
 :root {
-  --card-height: calc(var(--card-width) / 1.8);
-  --card-width: 90vh;
+  --card-height: calc(var(--card-width) / 1.9);
+  --card-width: 80vh;
 }
 
 body {
@@ -40,14 +40,14 @@ canvas {
 .utama-container {
   cursor: crosshair;
 }
-.utama-container h1 {
+.utama-container .happy {
   position: absolute;
-  top: 38%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: "Londrina Outline", "Source Sans Pro";
-  font-size: 5em;
+  font-size: 4em;
   font-weight: 1100;
   -webkit-user-select: none;
   user-select: none;
@@ -55,8 +55,22 @@ canvas {
 
 .utama-container span {
   color: #c0f20a;
-  font-size: 0.8em;
+  font-size: 0.7em;
+  font-weight: 10000;
   font-family: "Montserrat", "Source Sans Pro";
+}
+
+.utama-container .dev {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3c67e3;
+  text-shadow: 2px 2px 4px #fff;
+  font-family: "Montserrat", "Source Sans Pro";
+  font-size: 4em;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .utama-container .klik {
@@ -67,7 +81,6 @@ canvas {
   color: #fff;
   font-family: "Montserrat";
   font-size: 0.9em;
-  font-weight: 400;
   -webkit-user-select: none;
   user-select: none;
 }

@@ -171,7 +171,7 @@ window.addEventListener("scroll", function () {
   // Kecepatan Default
   let speedMountain = 1;
   let speedFactor = 1;
-  let speedText = 1;
+  let speedText = 1.3;
   let speedText2 = 0;
   let speedBg = 1;
 
@@ -184,7 +184,7 @@ window.addEventListener("scroll", function () {
     speedBg = 1.3;
   }
 
-  bg.style.top = 265 + value * -0.3 * speedFactor * speedBg + "px";
+  bg.style.top = 265 + value * -0.2 * speedFactor * speedBg + "px";
   moon.style.left = 1150 + value * -0.5 * speedFactor + "px";
   moon1.style.top = 300 + value * 0.07 + "px";
   moon1.style.left = -350 + value * 0.65 + "px";
@@ -192,7 +192,7 @@ window.addEventListener("scroll", function () {
   mountain.style.top = 770 + value * -0.77 * speedFactor * speedMountain + "px";
   road.style.top = 500 + value * -0.4 * speedFactor + "px";
   text.style.top =
-    speedText2 + -160 + value * 0.06 * speedFactor * speedText + "px";
+    speedText2 + -160 + value * 0.1 * speedFactor * speedText + "px";
 });
 
 // show % hidden element
