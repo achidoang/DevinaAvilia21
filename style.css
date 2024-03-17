@@ -232,7 +232,7 @@ section img {
   /* FOOTER */
   .sec {
     display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
-    padding: 0px; /* Beri ruang padding pada setiap elemen dalam footer */
+    padding: 30px; /* Beri ruang padding pada setiap elemen dalam footer */
     min-height: 80vh;
     background: blue;
   }
