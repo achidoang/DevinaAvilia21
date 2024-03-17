@@ -181,7 +181,7 @@ section img {
   /* UTAMA */
 
   body {
-    max-width: 360px;
+    max-width: max-content;
     overflow-x: hidden;
     margin: 0;
   }
