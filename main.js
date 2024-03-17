@@ -184,7 +184,7 @@ window.addEventListener("scroll", function () {
     speedBg = 1.3;
   }
 
-  bg.style.top = 265 + value * -0.37 * speedFactor * speedBg + "px";
+  bg.style.top = 265 + value * -0.3 * speedFactor * speedBg + "px";
   moon.style.left = 1150 + value * -0.5 * speedFactor + "px";
   moon1.style.top = 300 + value * 0.07 + "px";
   moon1.style.left = -350 + value * 0.65 + "px";

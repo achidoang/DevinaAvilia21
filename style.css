@@ -6,12 +6,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 body {
-  background: #020202;
-  margin: 0;
+  background: red;
   color: #ffffff;
   overflow-x: hidden;
+  margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -109,7 +110,7 @@ section img {
 #text {
   position: relative;
   color: #fff;
-  font-size: 6.5em;
+  font-size: 6em;
   text-shadow: 2px 2px 4px #020202;
   z-index: 1;
 }
@@ -136,7 +137,7 @@ section img {
 /* Footer */
 .bodyy {
   padding: 0;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 .sec {
@@ -179,12 +180,13 @@ section img {
 @media only screen and (max-width: 768px) {
   /* UTAMA */
   * {
-    max-width: max-content;
+    max-width: 400px;
+  }
+  body {
+    margin: 0;
   }
   .utama-container {
-    /* overflow-x: hidden; */
-    display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
-    padding: 20px; /* Beri ruang padding pada setiap elemen dalam footer */
+    overflow-x: hidden;
   }
 
   .utama-container h1 {
@@ -211,17 +213,15 @@ section img {
   section {
     position: relative;
     width: 100%;
-    /* min-width: 455px; */
     min-height: 80vh;
     justify-content: center;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     align-items: center;
   }
 
   #text {
-    font-size: 2.2em;
+    font-size: 2.1em;
     text-align: center;
-    margin-inline: 5px;
   }
 
   .moonY {
@@ -236,7 +236,7 @@ section img {
   .sec {
     display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
     padding: 0px; /* Beri ruang padding pada setiap elemen dalam footer */
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   .sec h2 {
