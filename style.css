@@ -176,7 +176,6 @@ section img {
   text-align: center;
   display: flex;
   cursor: pointer;
-  font-family: cursive;
   flex-direction: column;
   color: rgb(88 199 250 / 100%);
 }
@@ -246,7 +245,7 @@ section img {
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  transition: all 2.5s;
+  transition: all 2s;
 }
 
 .show {
