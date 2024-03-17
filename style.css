@@ -210,7 +210,8 @@ section img {
   /* PARALLAX */
   section {
     position: relative;
-    width: 150%;
+    width: 100%;
+    min-width: 455px;
     min-height: 80vh;
     justify-content: center;
     /* overflow-x: hidden; */
@@ -235,7 +236,7 @@ section img {
   .sec {
     display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
     padding: 0px; /* Beri ruang padding pada setiap elemen dalam footer */
-    min-height: 80vh;
+    min-height: 100vh;
   }
 
   .sec h2 {
