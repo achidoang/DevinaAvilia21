@@ -54,23 +54,10 @@ canvas {
 }
 
 .utama-container span {
-  color: #c0f20a;
-  font-size: 0.7em;
-  font-weight: 10000;
-  font-family: "Montserrat", "Source Sans Pro";
-}
-
-.utama-container .dev {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   color: #3c67e3;
   text-shadow: 2px 2px 4px #fff;
   font-family: "Montserrat", "Source Sans Pro";
-  font-size: 4em;
-  -webkit-user-select: none;
-  user-select: none;
+  font-size: 1.2em;
 }
 
 .utama-container .klik {
