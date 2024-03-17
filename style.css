@@ -271,15 +271,15 @@ section img {
     margin: 0;
   }
 
-  .utama-container h1 {
-    font-size: 1.75em;
+  .utama-container .happy {
+    font-size: 1.5em;
     text-align: center; /* Mengurangi ukuran font untuk judul h1 */
   }
 
   .utama-container span {
-    color: #c0f20a;
-    font-size: 0.6em;
-    font-weight: 500;
+    color: #3c67e3;
+    font-size: 0.5em;
+    text-shadow: 1px 1px 2px #fff;
     font-family: "Montserrat", "Source Sans Pro";
   }
 
@@ -329,13 +329,13 @@ section img {
   }
 
   .card h2 {
-    font-size: 1em;
+    font-size: 1.3em;
     padding-left: 15px;
     padding-right: 15px;
   }
 
   .card p {
-    font-size: 0.5em;
+    font-size: 0.8em;
     padding-left: 20px;
     padding-right: 20px;
   }
