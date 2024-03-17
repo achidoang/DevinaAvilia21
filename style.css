@@ -157,7 +157,8 @@ section img {
 .sec p {
   font-size: 1.3em;
   color: #fff;
-  margin-inline: 30vh;
+  margin-inline: 20vh;
+  text-align: center;
 }
 
 .hidden {
@@ -231,20 +232,25 @@ section img {
   /* PARALLAX END */
   /* FOOTER */
   .sec {
-    display: block; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
+    display: flex; /* Mengubah tata letak menjadi blok untuk perangkat seluler */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 30px; /* Beri ruang padding pada setiap elemen dalam footer */
-    min-height: 80vh;
+    min-height: 100vh;
+    align-items: center;
     background: blue;
   }
 
   .sec h2 {
-    font-size: 2em; /* Mengurangi ukuran font untuk judul h2 */
+    font-size: 1.5em; /* Mengurangi ukuran font untuk judul h2 */
+    text-align: center;
   }
 
   .sec p {
     font-size: 0.8em; /* Mengurangi ukuran font untuk paragraf */
     margin-inline: 0; /* Reset margin horizontal */
-    text-align: left; /* Pusatkan teks */
+    text-align: center; /* Pusatkan teks */
   }
   /* FOOTER END */
 }
