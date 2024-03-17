@@ -211,7 +211,7 @@ section img {
   section {
     position: relative;
     width: 100%;
-    min-width: 455px;
+    /* min-width: 455px; */
     min-height: 80vh;
     justify-content: center;
     /* overflow-x: hidden; */
