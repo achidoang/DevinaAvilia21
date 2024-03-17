@@ -1,11 +1,11 @@
 body {
   margin: 0;
-  background: red;
+  background: #060e1b;
   cursor: crosshair;
 }
-canvas {
+/* canvas {
   display: block;
-}
+} */
 
 h1 {
   position: absolute;
@@ -18,4 +18,11 @@ h1 {
   font-weight: 900;
   -webkit-user-select: none;
   user-select: none;
+}
+
+canvas {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
