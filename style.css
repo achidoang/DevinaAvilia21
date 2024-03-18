@@ -54,8 +54,8 @@ canvas {
 }
 
 .utama-container span {
-  color: #3c67e3;
-  text-shadow: 2px 2px 4px #fff;
+  color: #5ddcff;
+  text-shadow: 2px 2px 4px #4e00c2;
   font-family: "Montserrat", "Source Sans Pro";
   font-size: 1.2em;
 }
@@ -279,7 +279,7 @@ section img {
   .utama-container span {
     color: #3c67e3;
     font-size: 1em;
-    text-shadow: 1px 1px 2px #fff;
+    text-shadow: 1px 1px 2px #4e00c2;
     font-family: "Montserrat", "Source Sans Pro";
   }
 
