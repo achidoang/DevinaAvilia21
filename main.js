@@ -209,3 +209,22 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Alert
+// Ambil tombol dengan kelas close-btn
+var closeButton = document.querySelector(".close-btn");
+// Ambil popup-container
+var popupContainer = document.querySelector(".popup-container");
+
+// Tambahkan event listener untuk klik tombol
+closeButton.addEventListener("click", function () {
+  // Sembunyikan popup-container
+  popupContainer.style.display = "none";
+  // Hapus kelas body-lock-scroll
+  document.body.classList.remove("body-lock-scroll");
+});
+
+// Tampilkan popup-container
+popupContainer.style.display = "flex";
+// Tambahkan kelas body-lock-scroll untuk mengunci scroll
+document.body.classList.add("body-lock-scroll");

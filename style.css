@@ -29,8 +29,129 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* CSS untuk mengunci scroll */
+.body-lock-scroll {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
+}
+
+/* Alert */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  -webkit-user-select: none;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.8); /* Menambahkan lapisan transparan */
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out; /* Transisi opasitas untuk animasi */
+}
+
+.popup-container.hidden {
+  opacity: 0; /* Mengubah opasitas menjadi 0 saat menyembunyikan */
+}
+
+.popup-container .popup-box {
+  width: 500px;
+  background: #212534;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+}
+
+.popup-box h1 {
+  color: #ffffff;
+  text-align: center;
+  line-height: 1;
+}
+
+.popup-box p {
+  color: aliceblue;
+  margin: 12px 0 20px;
+  text-align: center;
+}
+
+.popup-box .glow-on-hover {
+  width: 100%;
+  height: 45px;
+  background: #4e00c2;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #5ddcff,
+    #4e00c2,
+    #3c67e3,
+    #ff7300,
+    #fffb00,
+    #ff00c8
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /* Utama */
